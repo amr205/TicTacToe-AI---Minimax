@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic-tac-toe Minimax</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/color/80/000000/hashtag-activity-grid-2.png">
+    <script type="text/javascript" src="behaviour.js"></script>
+  </head>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+    <div  id="main-div">
+      <table id="tablero" class="unselectable">
+        <tr>
+          <td onclick="tdClick(this)">&nbsp;</td>
+          <td onclick="tdClick(this)"></td>
+          <td onclick="tdClick(this)"></td>
+        </tr>
+        <tr>
+          <td onclick="tdClick(this)">&nbsp;</td>
+          <td onclick="tdClick(this)"></td>
+          <td onclick="tdClick(this)"></td>
+        </tr>
+        <tr>
+          <td onclick="tdClick(this)">&nbsp;</td>
+          <td onclick="tdClick(this)"></td>
+          <td onclick="tdClick(this)"></td>
+        </tr>
+      </table>
+      <br/>
+      <p id="turn">Current turn: You</p>
+    </div>
+    <div id="low">
+      <div class="card restart" id="restart-pc" onclick="restart(false)">
+        <img src="./icons/robot.png" width="55px">
+        <p>Restart, ai start</p>
+      </div>
+      <div class="card restart" id="restart-you" onclick="restart(true)">
+        <img src="./icons/avatar.png" width="55px">
+        <p>Restart, you start</p>
+      </div>
+    </div>
+
+  </body>
+</html>
